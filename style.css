@@ -1,0 +1,133 @@
+/* color: #323232; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+body {
+    background-image: url(assets/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content-wrapper {
+    margin-top: 0; 
+    transition: margin-top 0.2s ease;}
+
+.content-wrapper.active {
+    margin-top: 450px;}
+    
+    .blank, .blank_2 {
+        width: 100%;
+        min-height: 60vh;
+        background-color: #323232;}
+    
+
+
+/* section 1 */
+#home {
+    color: #fefefe;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .info_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40rem;
+    text-align: left;
+    gap: 1rem;
+
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 1.7rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    background-color: #fefefe3d;  */
+}
+
+#home .info_1 h1 {
+    font-weight: 700;
+    font-size: 3.9rem;
+    color: #323232;}
+
+#home .info_1 h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #323232;
+}
+#home .info_1 h3 {
+    color: #323232;
+    font-size: 1rem;
+}
+#home .info_1 h3 span {
+    font-size: 2rem;
+}
+#home .info_1 p {
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 18px;color: #323232;}
+
+#home .info_1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #323232;
+    padding: 0.7rem 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;}
+    #home .info_1 a:hover {
+        background-color: #000000;
+        color: white;
+        transform: scale(1.15);}
+
+
+/* section 2 */
+#about {
+    background-image: url(assets/bg4.jpg);
+    background-attachment: fixed;
+    height: 958px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.7rem;
+    transition: all 0.3s ease;}
+    .card:hover {
+        transform: scale(1.1);}
+
+.card .info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;}
+
+.card .info img {
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 0.7rem;}
