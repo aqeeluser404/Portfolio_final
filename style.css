@@ -32,10 +32,12 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
+
 
 #home .info_1 {
     display: flex;
@@ -45,6 +47,7 @@ body {
     width: 45rem;
     text-align: left;
     gap: .7rem;
+    margin-bottom: 8rem;
 
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     padding: 1.7rem;
