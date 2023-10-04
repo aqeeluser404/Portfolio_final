@@ -66,9 +66,6 @@ body {
     color: #323232;
     font-size: 1rem;
 }
-#home .info_1 h3 span {
-    font-size: 2rem;
-}
 #home .info_1 p {
     max-width: 600px;
     line-height: 1.5;
@@ -87,47 +84,90 @@ body {
     #home .info_1 a:hover {
         background-color: #000000;
         color: white;
-        transform: scale(1.15);}
+        transform: scale(1.1);}
 
 
 /* section 2 */
-#about {
+#projects {
     background-image: url(assets/bg4.jpg);
     background-attachment: fixed;
-    height: 958px;
+    min-height: 958px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card_row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;}
-
+    gap: 2rem;
+}
 .card {
     display: flex;
     flex-direction: column;
     width: 320px;
     height: 500px;
     background-color: #fff;
-    align-items: center;
+    padding: 1rem;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
     border-radius: 0.7rem;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;}
     .card:hover {
-        transform: scale(1.1);}
+        transform: scale(1.05);}
 
 .card .info {
-    width: 100%;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.7rem;}
 
+
+    .card .info h3 {
+        color: #323232;
+        font-size: 1.4rem;
+    }
+
 .card .info img {
-    width: 90%;
+    width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center;
-    margin-top: 20px;
-    border-radius: 0.7rem;}
+    border-radius: 0.2rem;}
+
+.btn_github {
+    display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    font-weight: 500;
+    /* background-color: #323232; */
+    padding: 0.7rem 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 2px solid orangered;
+    border-radius: 5px;}
+    .btn_github:hover {
+        background-color: orangered;
+        color: white;}
+
+.btn_github_2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #323232;
+    background-color: #fefefe;
+    padding: 0.7rem 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 5px;}
+    .btn_github_2:hover {
+        /* background-color: #e7e7e7; */
+        color: rgb(0, 0, 0);}

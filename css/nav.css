@@ -67,17 +67,17 @@ header {
 .btn {
     padding: .5rem 1rem;
     font-size: 1rem;
-    color: #fefefe;
-    background-color: #323232;
+    color: orangered;
+    /* background-color: #323232; */
+    border: 2px solid orangered;
     font-weight: 500;
-    border-style: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;}
-
-.btn:hover {
-    background-color: #000000;
-    transform: scale(1.15);}
+    .btn:hover {
+        background-color: orangered;
+        color: white;
+        transform: scale(1.1);}
 
 /* Responsive for different screen sizes */
 @media only screen and (max-width: 1320px) {
@@ -100,7 +100,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #fefefe;
+        background: #323232;
         margin: 6px 0;
     }
     .navbar {
@@ -114,7 +114,7 @@ header {
        left: 0;
        right: 0;
        width: 100vw;
-       background: black;
+       /* background: #fefefe3a; */
        transition: 0.2s;       
     }
     .navbar ul {
