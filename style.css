@@ -42,9 +42,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 40rem;
+    width: 45rem;
     text-align: left;
-    gap: 1rem;
+    gap: .7rem;
 
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     padding: 1.7rem;
@@ -55,7 +55,7 @@ body {
 
 #home .info_1 h1 {
     font-weight: 700;
-    font-size: 3.9rem;
+    font-size: 4.4rem;
     color: #323232;}
 
     #typedName {
@@ -71,8 +71,10 @@ body {
     -webkit-text-stroke: 2px #323232;
 }
 #home .info_1 h3 {
+    /* color: orangered; */
     color: #323232;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 #home .info_1 p {
     max-width: 600px;
@@ -98,8 +100,12 @@ body {
 /* section 2 */
 #projects {
     background-image: url(assets/bg4.jpg);
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    min-height: 958px;
+    width: 100%;
+    min-height: 100vh;
+    /* min-height: 958px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
