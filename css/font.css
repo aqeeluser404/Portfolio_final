@@ -1,0 +1,33 @@
+.h1 {
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #323232;}
+
+.h2 {
+    color: #323232;
+    font-size: 1.4rem;}
+
+.h3 {
+    color: #323232;
+    font-size: 1.1rem;
+    font-weight: 700;}
+.h4 {
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #ffffff;
+}    
+.p1 {
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 18px;color: #323232;}
+
+.stroke-span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #323232;}
+
+#typedName {
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* Cursor effect */
+    white-space: nowrap; /* Keep text in a single line */
+    margin: 0;
+    display: inline-block;}

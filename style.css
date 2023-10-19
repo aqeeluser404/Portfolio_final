@@ -6,12 +6,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;}
+
 body {
     background-image: url(assets/bg4.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .content-wrapper {
     margin-top: 0; 
     transition: margin-top 0.2s ease;}
@@ -19,14 +21,15 @@ body {
 .content-wrapper.active {
     margin-top: 450px;}
     
-    .blank, .blank_2 {
-        width: 100%;
-        min-height: 60vh;
-        background-color: #323232;}
-    
+.blank, .blank_2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #323232;}
 
 
-/* section 1 */
+
+/* ==============index.html============== */
+/* Home section */
 #home {
     color: #fefefe;
     width: 100%;
@@ -35,56 +38,25 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-}
+    gap: 1rem;}
 
-
-#home .info_1 {
+#home .home-text-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 45rem;
+    width: 40rem;
     text-align: left;
     gap: .7rem;
     margin-bottom: 8rem;
-
+    padding: 1.7rem;
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     padding: 1.7rem;
     border-radius: 1.6rem;
     cursor: pointer;
-    background-color: #fefefe3d;  */
-}
+    background-color: #fefefe3d;  */}
 
-#home .info_1 h1 {
-    font-weight: 700;
-    font-size: 4.4rem;
-    color: #323232;}
-
-    #typedName {
-        overflow: hidden;
-        border-right: 0.15em solid orange; /* Cursor effect */
-        white-space: nowrap; /* Keep text in a single line */
-        margin: 0;
-        display: inline-block;
-    }
-
-#home .info_1 h1 span {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #323232;
-}
-#home .info_1 h3 {
-    /* color: orangered; */
-    color: #323232;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-#home .info_1 p {
-    max-width: 600px;
-    line-height: 1.5;
-    font-size: 18px;color: #323232;}
-
-#home .info_1 a {
+#home .home-text-column a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
@@ -94,18 +66,21 @@ body {
     font-size: 0.9rem;
     transition: all 0.3s ease;
     border-radius: 5px;}
-    #home .info_1 a:hover {
-        background-color: #000000;
-        color: white;
-        transform: scale(1.1);}
 
+#home .home-text-column a:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.1)
+    
+    ;
 
-/* section 2 */
+}
+/* Projects section */
 #projects {
-    background-image: url(assets/bg4.jpg);
+    /* background-image: url(assets/bg4.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     width: 100%;
     min-height: 100vh;
     /* min-height: 958px; */
@@ -113,16 +88,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-}
+    gap: 3rem;}
 
 .card_row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-}
+    gap: 2rem;}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -144,12 +118,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 0.7rem;}
-
-
-    .card .info h3 {
-        color: #323232;
-        font-size: 1.4rem;
-    }
 
 .card .info img {
     width: 100%;
