@@ -71,11 +71,19 @@ body {
 #home .home-text-column a:hover {
     background-color: #000000;
     color: white;
-    transform: scale(1.1)
-    
-    ;
+    transform: scale(1.1);}
 
-}
+
+/* Skills section */
+#skills {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;}
+
+/* ==============projects.html============== */
 /* Projects section */
 #projects {
     /* background-image: url(assets/bg4.jpg);
