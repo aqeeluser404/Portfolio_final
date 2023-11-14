@@ -76,7 +76,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;}
+    align-items: center;
+}
 
 #section-block-skills p {
     width: 22rem;
@@ -86,18 +87,49 @@ body {
 .skill-card {
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #1a1a1a;
     padding: 2rem;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 1rem;
     border-radius: 0.4rem;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;}
-    .skill-card:hover {
-        transform: scale(1.05);}
-    
+    transition: all 1s ease;
+    overflow: hidden;
+}
 
+.expanded-content {
+    display: none;
+    transition: all 1s ease;
+}
+
+.skill-description {
+    color: white;
+}
+
+.skill-card:hover .expanded-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100px;  /* Adjust as needed */
+}
+
+.skill-bar {
+    height: 14px;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.skill-bar-filled {
+    height: 14px;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 2s ease-in-out;
+}
 /* ==============Page 2============== */
 /* About section */
 #about {

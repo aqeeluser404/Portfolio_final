@@ -7,6 +7,28 @@ hamburger.onclick = function() {
   contentWrapper.classList.toggle('active');
 }
 
+// document.querySelectorAll('.skill-card').forEach(card => {
+//   card.addEventListener('transitionend', function() {
+//       if (this.querySelector('.expanded-content').style.width === '100px') {  /* Must match the width in .expanded-content:hover */
+//           let skill = this.getAttribute('data-skill');
+//           this.querySelector('.skill-bar').style.width = skill + '%';
+//       } else {
+//           this.querySelector('.skill-bar').style.width = '0%';
+//       }
+//   });
+// });
+
+document.querySelectorAll('.skill-card').forEach(card => {
+  card.addEventListener('mouseover', function() {
+    let skill = this.getAttribute('data-skill');
+    this.querySelector('.skill-bar-filled').style.width = skill + '%';
+  });
+  card.addEventListener('mouseout', function() {
+    this.querySelector('.skill-bar-filled').style.width = '0%';
+  });
+});
+
+
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
 //   let i = 0;
