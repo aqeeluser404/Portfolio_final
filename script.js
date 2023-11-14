@@ -21,13 +21,22 @@ hamburger.onclick = function() {
 document.querySelectorAll('.skill-card').forEach(card => {
   card.addEventListener('mouseover', function() {
     let skill = this.getAttribute('data-skill');
-    this.querySelector('.skill-bar-filled').style.width = skill + '%';
+    let skillBarFilled = this.querySelector('.skill-bar-filled');
+    let width = 0;
+    let id = setInterval(frame, 15); // adjust this value to make the transition faster or slower
+    function frame() {
+      if (width >= skill) {
+        clearInterval(id);
+      } else {
+        width++;
+        skillBarFilled.style.width = width + '%';
+      }
+    }
   });
   card.addEventListener('mouseout', function() {
     this.querySelector('.skill-bar-filled').style.width = '0%';
   });
 });
-
 
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
