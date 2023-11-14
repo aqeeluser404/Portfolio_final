@@ -78,7 +78,19 @@ body {
     gap: 1rem;
     align-items: center;}
 
-
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;}
+    .skill-card:hover {
+        transform: scale(1.05);}
+    
 
 /* ==============Page 2============== */
 /* About section */
