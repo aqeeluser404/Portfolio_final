@@ -78,10 +78,16 @@ body {
     gap: 1rem;
     align-items: center;}
 
+#section-block-skills p {
+    width: 22rem;
+    text-align: center;
+}
+
 .skill-card {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #1a1a1a;
     padding: 2rem;
     align-items: flex-start;
     justify-content: space-between;
