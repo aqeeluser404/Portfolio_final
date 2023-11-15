@@ -7,34 +7,21 @@ hamburger.onclick = function() {
   contentWrapper.classList.toggle('active');
 }
 
-// document.querySelectorAll('.skill-card').forEach(card => {
-//   card.addEventListener('transitionend', function() {
-//       if (this.querySelector('.expanded-content').style.width === '100px') {  /* Must match the width in .expanded-content:hover */
-//           let skill = this.getAttribute('data-skill');
-//           this.querySelector('.skill-bar').style.width = skill + '%';
-//       } else {
-//           this.querySelector('.skill-bar').style.width = '0%';
-//       }
-//   });
-// });
-
 document.querySelectorAll('.skill-card').forEach(card => {
+  let skillBarFilled = card.querySelector('.skill-bar-filled');
+  let timeout;
+
   card.addEventListener('mouseover', function() {
-    let skill = this.getAttribute('data-skill');
-    let skillBarFilled = this.querySelector('.skill-bar-filled');
-    let width = 0;
-    let id = setInterval(frame, 15); // adjust this value to make the transition faster or slower
-    function frame() {
-      if (width >= skill) {
-        clearInterval(id);
-      } else {
-        width++;
-        skillBarFilled.style.width = width + '%';
-      }
-    }
+      let skill = this.getAttribute('data-skill');
+      clearTimeout(timeout); // Clear any existing timeout to prevent interference
+      timeout = setTimeout(() => {
+          skillBarFilled.style.width = skill + '%';
+      }, 150); // Sets the delay time in milliseconds 
   });
+
   card.addEventListener('mouseout', function() {
-    this.querySelector('.skill-bar-filled').style.width = '0%';
+      clearTimeout(timeout); // Clears the timeout if the mouse leaves before the delay
+      skillBarFilled.style.width = '0%';
   });
 });
 

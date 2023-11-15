@@ -26,6 +26,10 @@
     width: 75%;
     text-align: center;
 }
+.smol-text {
+    font-size: 13px;
+    color: #777777;
+}
 
 .stroke-span {
     -webkit-text-fill-color: transparent;

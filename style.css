@@ -80,7 +80,7 @@ body {
 }
 
 #section-block-skills p {
-    width: 22rem;
+    width: 25rem;
     text-align: center;
 }
 
@@ -120,6 +120,10 @@ body {
     border-radius: 2px;
     margin-top: 10px;
     width: 100%;
+}
+
+.smooth-transition {
+    transition: width 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
 }
 
 .skill-bar-filled {
