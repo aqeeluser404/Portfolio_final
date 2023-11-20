@@ -41,6 +41,19 @@ body {
     justify-content: center;
     gap: 1rem;}
 
+.img-profile {
+    border-radius: 50%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+.social-links {
+    display: flex;
+    font-size: 2.5rem;
+    gap: 1.5rem;
+    color: #323232;
+}
 #home .home-text-column {
     display: flex;
     flex-direction: column;
@@ -48,8 +61,8 @@ body {
     justify-content: center;
     width: 40rem;
     text-align: left;
-    gap: .7rem;
-    margin-bottom: 8rem;
+    gap: 1.5rem;
+    /* margin-bottom: 8rem; */
     padding: 1.7rem;}
 
 #home .home-text-column a {
