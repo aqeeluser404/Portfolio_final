@@ -1,17 +1,13 @@
 /* Responsive for different screen sizes */
-@media only screen and (max-width: 1320px) {
-    header{
-        /* adjusts the padding of header on far ends */
-        padding: 0 50px;
-    }
-}
 @media only screen and (max-width: 1100px) {
     header {
-        /* adjusts the padding of header on far ends */
-        padding: 0 30px;
+        padding-left: 4rem;
     }
 }
 @media only screen and (max-width: 900px) {
+    header {
+        padding-left: 2rem;
+    }
     .hamburger {
         display: block;
         cursor: pointer;
@@ -52,7 +48,9 @@
     }
 
     #home {
-        width: auto;
+        /* width: auto; */
+        padding-left: 4rem;
+        padding-right: 4rem;
         /* min-width: 100vh; */
         flex-direction: column-reverse;
         justify-content: center;
@@ -71,7 +69,7 @@
     }
     .img-profile-2 {
         display: none;
-        max-width: 100%; /* Make the image responsive */
+        max-width: 100%; 
 
     }
     .direction-row {
