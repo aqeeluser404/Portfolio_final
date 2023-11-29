@@ -6,7 +6,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;}
-
+    html {
+        scroll-behavior: smooth;
+    }
 body {
     background-image: url(assets/bg4.jpg);
     background-size: cover;
@@ -20,13 +22,17 @@ body {
 
 .content-wrapper.active {
     margin-top: 450px;}
-    
-.blank, .blank_2 {
-    width: 100%;
-    padding: 4rem;
-    min-height: 100vh;
-    background-color: #323232;}
 
+.centered-blank {
+    display: flex;
+    justify-content: center;
+}
+.blank, .blank_2 {
+    width: 85%;
+    padding: 5rem;
+    min-height: 100vh;
+    border-radius: 25px;
+    background-color: #323232;}
 
 
 /* ==============index Page============== */
@@ -34,26 +40,30 @@ body {
 #home {
     color: #fefefe;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
     gap: 1rem;}
 
 .img-profile {
     border-radius: 50%;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
+
 }
+
+.img-profile-2 {
+    border-radius: 25%;
+    display: none;}
+
 .social-links {
     display: flex;
     font-size: 2.5rem;
     gap: 1.5rem;
-    color: #323232;
-}
+    color: #323232;}
+
 #home .home-text-column {
     display: flex;
     flex-direction: column;

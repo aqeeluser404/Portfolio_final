@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+
+
     <header>
-        <div class="title">
+        <!-- <div class="title">
             <img src="assets/logo.png" width="75">
-        </div>
+        </div> -->
         <nav class="navbar">
             <ul>
                 <li>
@@ -34,94 +36,105 @@
                 <li>
                     <a href="about.html#section-block-education">EDUCATION</a>
                 </li>
-
             </ul>
         </nav>
-        <button class="btn">Hire Me</button>
+
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+        <button class="btn">Hire Me</button>
     </header>
           
     <div class="content-wrapper">
         <main>
             <div id="home">
                 <div>
-                    <img src="assets/me-2.png" width="550px" class="img-profile">
+                    <img src="assets/me.png" width="650px" class="img-profile">
                 </div>
                 <div class="home-text-column">
                     <!-- <h1 id="typedText"></h1> -->
-                    <h1 class="h1">Hi, I'm <span class="stroke-span">Aqeel</span>, <br> Software Developer</h1>
-                    <!-- <h3 class="h3">FIRST SOLVE THE PROBLEM. THEN WRITE THE CODE.</h3> -->
+                    <div class="direction-row">
+                        <div>
+                            <img src="assets/me.png" width="350px" class="img-profile-2">
+                        </div>
+                        
+                        <h1 class="h1">
+                            Hi, I'm <span class="stroke-span">Aqeel</span>, <br> Software Developer
+                        </h1>
+                    </div>
+
+                    <p class="p1">The design of an application or website usually mirrors the thought process of the creator or designer.</p>
                     <h1 class="social-links">
+                        <a href="#">Download CV</a>
                         <i class="fa-brands fa-github"></i>
                         <i class="fab fa-linkedin"></i>
                     </h1>
-                    <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, maxime! Fugit sequi unde, quod voluptates ducimus repellat ullam esse porro eligendi nesciunt omnis dolor vel cum. Fugiat incidunt tempore ex.</p>
-                    <a href="#">Download CV</a>
+
                 </div>
             </div>
     
-            <div class="blank">
-                <div id="section-block-skills">
-                    <h1 class="h4">My Development Arsenal</h1>
-                    <p class="p2">
-                        I specialize in front-end development, crafting visually appealing websites using HTML, CSS, and JavaScript. 
-                        <br><span class="smol-text">My proficiency extends to:</span>
-                    </p>
-                    <div class="card_row">
-                        <div class="skill-card" data-skill="82">
-                            <img src="assets/html5-badge.svg" alt="html" width="125">
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in utilizing the latest HTML5 features for structuring web content.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+            <div class="centered-blank">
+                <div class="blank">
+                    <div id="section-block-skills">
+                        <h1 class="h4">MY SKILLS</h1>
+                        <p class="p2">
+                            I specialize in front-end development, crafting visually appealing websites using HTML, CSS, and JavaScript. 
+                            <br><span class="smol-text">My expertise extends to</span>
+                        </p>
+                        <div class="card_row">
+                            <div class="skill-card" data-skill="82">
+                                <img src="assets/html5-badge.svg" alt="html" width="125">
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in utilizing the latest HTML5 features for structuring web content.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="65">
+                                <img src="assets/css3-badge.svg" alt="css-img" width="125">
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in leveraging CSS3 to create visually stunning and responsive designs.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="50">
+                                <img src="assets/javascript-badge.svg" alt="js-img" width="125" height="125">
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in JavaScript to add interactivity and functionality to web applications.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-card" data-skill="65">
-                            <img src="assets/css3-badge.svg" alt="css-img" width="125">
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in leveraging CSS3 to create visually stunning and responsive designs.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                        <div class="card_row">
+                            <div class="skill-card" data-skill="50">
+                                <img src="assets/vue.js-badge.svg" alt="vue" width="125" height="130">
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in Vue.js for building dynamic and scalable user interfaces.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-card" data-skill="50">
-                            <img src="assets/javascript-badge.svg" alt="js-img" width="125" height="125">
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in JavaScript to add interactivity and functionality to web applications.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                            <div class="skill-card" data-skill="50">
+                                <img src="assets/spring-badge.svg" alt="spring" width="125">
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in Spring for robust and efficient backend development.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card_row">
-                        <div class="skill-card" data-skill="50">
-                            <img src="assets/vue.js-badge.svg" alt="vue" width="125" height="130">
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in Vue.js for building dynamic and scalable user interfaces.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="50">
-                            <img src="assets/spring-badge.svg" alt="spring" width="125">
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in Spring for robust and efficient backend development.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="50">
-                            <img src="assets/git-badge.svg" alt="git" width="125" >
-                            <div class="expanded-content">
-                                <div class="skill-description smol-text">Skilled in Git for version control and collaborative development.</div>
-                                <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                            <div class="skill-card" data-skill="50">
+                                <img src="assets/git-badge.svg" alt="git" width="125" >
+                                <div class="expanded-content">
+                                    <div class="skill-description smol-text">Skilled in Git for version control and collaborative development.</div>
+                                    <div class="skill-bar"><div class="skill-bar-filled smooth-transition"></div></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
 
-            <div id="section-block-projects">
+
+            <section id="section-block-projects">
 
                 <h1 class="h1">Projects</h1>
                 <!-- <div class="horizontal-line"></div> -->
@@ -167,7 +180,7 @@
                     <i class="fa-brands fa-github"></i> 
                     See All Projects
                 </a>
-            </div>
+            </section>
         </main>
     </div>
     

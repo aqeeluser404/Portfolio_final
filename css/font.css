@@ -1,6 +1,7 @@
 .h1 {
     font-weight: 700;
-    font-size: 4.4rem;
+    font-size: 4rem;
+    line-height: 1.2;
     color: #323232;}
 
 .h2 {
@@ -17,9 +18,9 @@
     color: #ffffff;
 }    
 .p1 {
-    max-width: 600px;
+    max-width: 450px;
     line-height: 1.5;
-    font-size: 18px;color: #323232;}
+    font-size: 15px;color: #323232;}
 
 .p2 {
     color: white;

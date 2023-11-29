@@ -6,9 +6,9 @@ header {
     background: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 7rem;
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);}
+    justify-content: start;
+    gap: 7rem;}
+    /* box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);} */
 
 .title img {
 
@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;}
+    }
 
 .navbar.active {   
     /* javascript code */
@@ -29,7 +29,7 @@ header {
 .navbar ul {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;}
+    gap: 1rem;}
 
 .navbar.active ul {
     /* javascript code */

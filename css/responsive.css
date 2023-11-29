@@ -67,8 +67,18 @@
         /* width: 250px; */
     }
     .img-profile {
-        width: 50%;
+        display: none;
     }
+    .img-profile-2 {
+        display: none;
+        max-width: 100%; /* Make the image responsive */
+
+    }
+    .direction-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .card_row {
         flex-direction: column;
     }
