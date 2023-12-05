@@ -6,13 +6,12 @@ header {
     background: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding-left: 8rem;
-    gap: 7rem;}
+    justify-content: end;
+    padding-right: 5rem;
+    gap: 47rem;}
     /* box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);} */
 
 .title img {
-
     color: #323232;}
 
 .hamburger {display: none;}
@@ -40,9 +39,9 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #323232;
-    font-size: .8rem;
-    font-weight: 700;
+    color: #d8d8d8;
+    font-size: 1rem;
+    font-weight: 500;
     /* padding: 5px 15px; */
     margin: 0 5px;
     border-radius: 50px;
@@ -51,6 +50,9 @@ header {
     padding: 0.5rem;
     transition: 0.2s;}
 
+.navbar ul li a:hover {
+    color: rgb(255, 146, 106);
+}
 .navbar ul li a::after {
     content: "";
     position: absolute;
@@ -58,25 +60,26 @@ header {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #323232;
+    background-color: rgb(255, 146, 106);
     transition: all 0.2s ease;}
 
 .navbar ul li a:hover::after {
     width: 70%;
-    color: #808080;}
+    color: rgb(255, 146, 106);}
 
 .btn {
-    padding: .5rem 1rem;
+    height: 37px;
+    padding: .2rem 1rem;
     font-size: 1rem;
-    color: orangered;
-    /* background-color: #323232; */
-    border: 2px solid orangered;
+    background-color: rgba(255, 68, 0, 0);
+    color: rgb(255, 146, 106);
+    border: 3px solid rgb(255, 146, 106);
     font-weight: 500;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;}
     .btn:hover {
-        background-color: orangered;
+        background-color: rgb(255, 146, 106);
         color: white;
         transform: scale(1.1);}
 

@@ -1,15 +1,21 @@
 .h1 {
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 1.2;
-    color: #323232;}
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #d8d8d8;}
 
+.h5 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #d8d8d8;}
+    
 .h2 {
-    color: #323232;
+    color: #d8d8d8;
     font-size: 1.4rem;}
 
 .h3 {
-    color: #323232;
+    color: #ffffff;
     font-size: 1.1rem;
     font-weight: 700;}
 .h4 {
@@ -20,7 +26,7 @@
 .p1 {
     max-width: 450px;
     line-height: 1.5;
-    font-size: 15px;color: #323232;}
+    font-size: 15px;color: #d8d8d8;}
 
 .p2 {
     color: white;
@@ -34,7 +40,7 @@
 
 .stroke-span {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #323232;}
+    -webkit-text-stroke: 2px rgb(255, 146, 106);}
 
 #typedName {
     overflow: hidden;
