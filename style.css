@@ -27,11 +27,12 @@ body {
     justify-content: center;
 }
 .blank, .blank_2 {
-    width: 85%;
-    padding: 5rem;
+    width: 75%;
+    padding-left: .8rem;
     min-height: 100vh;
     border-radius: 25px;
-    background-color: #323232;}
+    background-image: linear-gradient(to right, rgba(50, 50, 50, 0), rgba(50, 50, 50, 1) 50%, rgba(50, 50, 50, 0));
+}
 
 
 /* ==============index Page============== */
@@ -49,12 +50,10 @@ body {
     padding-left: 2rem;
     padding-right: 2rem; */
     padding: 4rem;
-    gap: 5rem;}
+    gap: 2.5rem;}
 
 .img-profile {
-    border-radius: 15%;
-
-}
+    border-radius: 15%;}
 
 .img-profile-2 {
     border-radius: 25%;
@@ -62,19 +61,22 @@ body {
 
 .social-links {
     display: flex;
+    gap: 2rem;
+    }
+
+.social-links a {
+    color: #9c9c9c;
     font-size: 2rem;
-    gap: 1.2rem;
-    color: #d8d8d8;}
+}
 
 #home .home-text-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 40rem;
+    width: 50rem;
     text-align: left;
-    gap: 1.5rem;
-    /* margin-bottom: 8rem; */
+    gap: 1.75rem;
     padding: 1.7rem;}
 
 #home .home-text-column a {
@@ -84,7 +86,7 @@ body {
     background-color: #d8d8d8;;
     text-align: center;
     height: 37px;
-    padding: .5rem 1rem;
+    padding: .6rem 0.7rem;
     font-size: .8rem;
     font-weight: 700;
     transition: all 0.3s ease;
@@ -97,6 +99,11 @@ body {
 
 
 /* Skills section */
+.section-block-skills-top {
+    display: flex;
+    width: 100%;
+}
+
 #section-block-skills {
     width: 100%;
     min-height: 100vh;

@@ -1,14 +1,14 @@
 .h1 {
     font-weight: 700;
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 4rem;
+    line-height: .8;
     color: #d8d8d8;}
 
 .h5 {
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 1.2;
-    color: #d8d8d8;}
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    color: rgb(255, 146, 106);}
     
 .h2 {
     color: #d8d8d8;
@@ -25,7 +25,7 @@
 }    
 .p1 {
     max-width: 450px;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 15px;color: #d8d8d8;}
 
 .p2 {
@@ -36,6 +36,12 @@
 .smol-text {
     font-size: 13px;
     color: #777777;
+}
+
+.name {
+    font-size: 1.5rem;
+    color: #d8d8d8;
+    font-weight: 300;
 }
 
 .stroke-span {
