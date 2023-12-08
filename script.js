@@ -7,6 +7,16 @@ hamburger.onclick = function() {
   contentWrapper.classList.toggle('active');
 }
 
+// const header = document.querySelector("header");
+
+// window.addEventListener("scroll", function() {
+//   if (window.scrollY > 0) {
+//     header.style.background = "rgba(0, 0, 0, 0.9)"; 
+//   } else {
+//     header.style.background = "rgba(0, 0, 0, 0)"; 
+//   }
+// });
+
 document.querySelectorAll('.skill-card').forEach(card => {
   let skillBarFilled = card.querySelector('.skill-bar-filled');
   let timeout;
