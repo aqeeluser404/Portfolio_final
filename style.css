@@ -35,8 +35,7 @@ body {
 }
 
 
-/* ==============index Page============== */
-/* Home section */
+/* Home section======================================================= */
 #home {
     color: #d8d8d8;
     width: 100%;
@@ -98,7 +97,70 @@ body {
     transform: scale(1.1);}
 
 
-/* Skills section */
+/* About section======================================================= */
+.section-block-about-top {
+    display: flex;
+    width: 100%;
+}
+
+#section-block-about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#section-block-about p {
+    width: 40rem;
+    text-align: left;
+}
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;}
+
+#about div {
+    width: 60rem;
+    padding: 3rem; 
+    display: flex; 
+    justify-content: center;
+}
+
+#about div h1 {
+    font-size: 6rem;
+    text-align: right;
+    display: block;
+    padding: 2rem;
+}
+
+#about div h1 span {
+    opacity: 50%;
+}
+
+#about div p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+/* education section=================================================== */
+#section-block-education {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;}
+
+/* Skills section====================================================== */
 .section-block-skills-top {
     display: flex;
     width: 100%;
@@ -127,7 +189,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -166,55 +228,8 @@ body {
     width: 0;
     /* transition: 0.3s ease-in; */
 }
-/* ==============Page 2============== */
-/* About section */
-#about {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;}
 
-#about div {
-    width: 60rem;
-    padding: 3rem; 
-    display: flex; 
-    justify-content: center;
-}
-
-#about div h1 {
-    font-size: 6rem;
-    text-align: right;
-    display: block;
-    padding: 2rem;
-}
-
-#about div h1 span {
-    opacity: 50%;
-}
-
-#about div p {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-}
-/* education section */
-#section-block-education {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;}
-
-
-
-/* ==============Page 3============== */
-/* Projects section */
+/* Projects section===================================================== */
 #section-block-projects {
     padding: 4rem;
     width: 100%;
