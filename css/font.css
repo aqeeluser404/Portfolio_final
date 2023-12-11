@@ -23,6 +23,11 @@
     font-size: 4.4rem;
     color: #ffffff;
 }    
+.h6 {
+    color: #d8d8d8;
+    font-size: 1.2;
+    font-weight: 400;
+}
 .p1 {
     max-width: 450px;
     line-height: 1.4;

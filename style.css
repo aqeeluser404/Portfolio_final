@@ -169,6 +169,51 @@ body {
     align-items: center;
     gap: 3rem;}
 
+/* hire-me section=================================================== */
+
+#hire-me {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 5rem;
+    justify-content: center;
+}
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+.contact-form {
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+#hire-me h1 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.form-group label {
+    display: block;
+    color:#d8d8d8;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
 /* Skills section====================================================== */
 .section-block-skills-top {
     display: flex;

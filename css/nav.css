@@ -12,15 +12,21 @@ header {
     transition: 0.2s;
     /* position: fixed; */
 }
+
     /* box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);} */
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.title img {
-    color: #d8d8d8;}
-
+.title a img {
+    color: #d8d8d8;
+}
+.title a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
 .hamburger {display: none;}
 
 .navbar {

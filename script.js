@@ -44,7 +44,10 @@ function updateTimeline() {
 window.addEventListener('scroll', updateTimeline);
 
 
-
+function redirectToPage() {
+  // Redirecting to another HTML page
+  window.location.href = 'hire.html';
+}
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
 //   let i = 0;
