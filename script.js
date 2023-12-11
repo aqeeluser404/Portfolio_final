@@ -35,6 +35,18 @@ document.querySelectorAll('.skill-card').forEach(card => {
   });
 });
 
+    // Function to update timeline position based on scroll
+    function updateTimeline() {
+      const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      const timeline = document.getElementById('timeline');
+      const timelineIcon = document.getElementById('timelineIcon');
+      // timeline.style.top = scrollPercentage + '%';
+      timelineIcon.style.top = scrollPercentage + '%';
+    }
+
+    // Event listener for scroll to update timeline position
+    window.addEventListener('scroll', updateTimeline);
+
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
 //   let i = 0;

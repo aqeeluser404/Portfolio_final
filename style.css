@@ -193,7 +193,7 @@ body {
 .skill-card {
     margin-top: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #1a1a1a;
     padding: 2rem;
     align-items: flex-start;
@@ -319,6 +319,38 @@ body {
     border-radius: 5px;}
     .btn_github_2:hover {
         color: rgb(0, 0, 0);}
+
+    .timeline {
+        position: fixed;
+        top: 50%;
+        right: 2.5%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 1px;
+        background-color: rgb(255, 146, 106);
+        z-index: 999;
+      }
+  
+      .timeline-icon {
+        position: fixed;
+        top: 0;
+        right: 2.5%;
+        transform: translateX(45%);
+        width: 15px;
+        height: 15px;
+        background-color: rgb(255, 146, 106);
+        border-radius: 50%;
+        z-index: 1000;
+        /* You can add an icon or content inside the circle */
+        /* For example, using Font Awesome for an icon */
+        /* content: '\f111'; */
+        /* font-family: 'Font Awesome 5 Free'; */
+        /* font-weight: 900; */
+        /* font-size: 20px; */
+        /* color: white; */
+        /* text-align: center; */
+        /* line-height: 30px; */
+      }
 
 
 
