@@ -1,3 +1,6 @@
+
+
+// Function for navigation hamburger
 const hamburger = document.querySelector(".hamburger");
 const contentWrapper = document.querySelector(".content-wrapper");
 
@@ -7,16 +10,8 @@ hamburger.onclick = function() {
   contentWrapper.classList.toggle('active');
 }
 
-// const header = document.querySelector("header");
 
-// window.addEventListener("scroll", function() {
-//   if (window.scrollY > 0) {
-//     header.style.background = "rgba(0, 0, 0, 0.9)"; 
-//   } else {
-//     header.style.background = "rgba(0, 0, 0, 0)"; 
-//   }
-// });
-
+// Function for card skill containers
 document.querySelectorAll('.skill-card').forEach(card => {
   let skillBarFilled = card.querySelector('.skill-bar-filled');
   let timeout;
@@ -35,17 +30,20 @@ document.querySelectorAll('.skill-card').forEach(card => {
   });
 });
 
-    // Function to update timeline position based on scroll
-    function updateTimeline() {
-      const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-      const timeline = document.getElementById('timeline');
-      const timelineIcon = document.getElementById('timelineIcon');
-      // timeline.style.top = scrollPercentage + '%';
-      timelineIcon.style.top = scrollPercentage + '%';
-    }
 
-    // Event listener for scroll to update timeline position
-    window.addEventListener('scroll', updateTimeline);
+
+// Function to update timeline position based on scroll
+function updateTimeline() {
+  const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  // const timeline = document.getElementById('timeline');
+  const timelineIcon = document.getElementById('timelineIcon');
+  // timeline.style.top = scrollPercentage + '%';
+  timelineIcon.style.top = scrollPercentage + '%';
+}
+// Event listener for scroll to update timeline position
+window.addEventListener('scroll', updateTimeline);
+
+
 
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
@@ -77,8 +75,6 @@ document.querySelectorAll('.skill-card').forEach(card => {
 //       }
 //     }
 //   }
-
 //   type();
 // }
-
 // typeWriter();
