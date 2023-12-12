@@ -12,8 +12,52 @@ header {
     transition: 0.2s;
     /* position: fixed; */
 }
-
-    /* box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);} */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    width: 20%;
+    border-bottom: 1px solid rgb(255, 146, 106);
+}
+header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 57%;
+    width: 1%;
+    border-bottom: 1px solid rgb(255, 146, 106);
+}
+/* Keyframes for the animation */
+@keyframes borderSlideIn {
+    0% {
+      left: 100%; /* Starting position (completely outside) */
+    }
+    100% {
+      left: 60%; /* Ending position (60% from the left) */
+    }
+  }
+  
+  /* Apply animation to header elements */
+  header::after,
+  header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    border-bottom: 1px solid rgb(255, 146, 106);
+    animation: borderSlideIn 2s forwards; /* 1s duration, forwards to stay at end state */
+  }
+  
+  /* Initial state */
+  header::after {
+    left: 100%; /* Initially outside the visible area */
+  }
+  
+  header::before {
+    left: 97%; /* Initially outside the visible area */
+  }
+  
 .title {
     display: flex;
     justify-content: center;
