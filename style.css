@@ -365,12 +365,17 @@ body {
     .btn_github_2:hover {
         color: rgb(0, 0, 0);}
 
+    
+        .timeline-icon,
+        .timeline-icon-mirrored {
+          display: none;
+        }
     .timeline {
         position: fixed;
         top: 50%;
         right: 2.5%;
         transform: translate(-50%, -50%);
-        height: 80%;
+        height: 70%;
         width: 1px;
         background-color: rgb(255, 146, 106);
         z-index: 999;
@@ -396,6 +401,30 @@ body {
         /* text-align: center; */
         /* line-height: 30px; */
       }
+
+/* Mirrored timeline */
+.timeline-mirrored {
+    position: fixed;
+    top: 50%;
+    left: 2.5%; /* Change right to left */
+    transform: translate(-50%, -50%) scaleX(-1); /* Mirroring */
+    height: 70%;
+    width: 0.25px;
+    background-color: rgb(255, 146, 106);
+    z-index: 999;
+  }
+  
+  .timeline-icon-mirrored {
+    position: fixed;
+    top: 100%;
+    left: 2.5%; /* Change right to left */
+    transform: translateX(-45%) scaleX(-1); /* Mirroring */
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 146, 106);
+    border-radius: 50%;
+    z-index: 1000;
+  }
 
 
 

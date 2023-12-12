@@ -43,6 +43,30 @@ function updateTimeline() {
 // Event listener for scroll to update timeline position
 window.addEventListener('scroll', updateTimeline);
 
+function updateMirroredTimeline() {
+  const scrollPercentage = 100 - (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  const timelineIconMirrored = document.getElementById('timelineIconMirrored');
+  timelineIconMirrored.style.top = scrollPercentage + '%';
+}
+
+// Function to handle icon visibility based on scroll
+function handleIconVisibility() {
+  const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  const timelineIcon = document.getElementById('timelineIcon');
+  const timelineIconMirrored = document.getElementById('timelineIconMirrored');
+
+  if (scrollPercentage > 0 && scrollPercentage < 100) {
+    timelineIcon.style.display = 'block';
+    timelineIconMirrored.style.display = 'block';
+  } else {
+    timelineIcon.style.display = 'none';
+    timelineIconMirrored.style.display = 'none';
+  }
+}
+// Event listener for scroll to handle icon visibility
+window.addEventListener('scroll', handleIconVisibility);
+window.addEventListener('scroll', updateMirroredTimeline);
+
 
 function redirectToPage() {
   // Redirecting to another HTML page
