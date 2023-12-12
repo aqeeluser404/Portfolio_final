@@ -201,13 +201,13 @@ body {
 
 #about div {
     width: 60rem;
-    padding: 3rem; 
+    padding: 3rem;
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
     justify-content: center;
 }
 
-#about div h1 {
+.about-me-image {
     font-size: 6rem;
     display: flex;
     flex-direction: column;
@@ -218,7 +218,7 @@ body {
     min-width: 55vh;
     padding: 1rem;
     border-radius: 1rem;
-    background-image: url(assets/me-portrait.png);
+    background-image: url(assets/placeholder.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -291,7 +291,6 @@ body {
 
 /* Skills section====================================================== */
 .section-block-skills-top {
-    display: flex;
     width: 100%;
 }
 
@@ -314,12 +313,12 @@ body {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1a;
+    background-color: rgba(255, 146, 106, 0.5);
     padding: 2rem;
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.1rem;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
