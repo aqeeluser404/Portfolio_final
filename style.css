@@ -235,7 +235,9 @@ body {
     list-style: none;
     padding: 0;
 }
-
+.education-timeline li {
+    height: fit-content;
+}
 .timeline-item {
     display: flex;
     align-items: flex-start;
@@ -244,10 +246,9 @@ body {
 
 .timeline-year {
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    color: #d8d8d8;
     width: 100px;
-    text-align: right;
+    text-align: center;
     margin-right: 20px;
 }
 
