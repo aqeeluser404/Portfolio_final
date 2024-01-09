@@ -56,8 +56,8 @@ function handleIconVisibility() {
   const timelineIconMirrored = document.getElementById('timelineIconMirrored');
 
   if (scrollPercentage > 0 && scrollPercentage < 100) {
-    timelineIcon.style.display = 'block';
-    timelineIconMirrored.style.display = 'block';
+    // timelineIcon.style.display = 'block';
+    // timelineIconMirrored.style.display = 'block';
   } else {
     timelineIcon.style.display = 'none';
     timelineIconMirrored.style.display = 'none';

@@ -15,7 +15,7 @@
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #323232;
+        background: #d8d8d8;
         margin: 6px 0;
     }
     .navbar {
@@ -79,5 +79,12 @@
     
     .card_row {
         flex-direction: column;
+    }
+
+    .timeline {
+        display: none;
+    }
+    #timelineIcon {
+        display: none;
     }
 }
