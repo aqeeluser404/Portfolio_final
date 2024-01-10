@@ -18,15 +18,16 @@ document.querySelectorAll('.skill-card').forEach(card => {
 
   card.addEventListener('mouseover', function() {
       let skill = this.getAttribute('data-skill');
-      clearTimeout(timeout); // Clear any existing timeout to prevent interference
+      clearTimeout(timeout);
       timeout = setTimeout(() => {
           skillBarFilled.style.width = skill + '%';
-      }, 150); // Sets the delay time in milliseconds 
+      }, 150); 
   });
 
   card.addEventListener('mouseout', function() {
-      clearTimeout(timeout); // Clears the timeout if the mouse leaves before the delay
+
       skillBarFilled.style.width = '0%';
+      clearTimeout(timeout);
   });
 });
 
