@@ -6,12 +6,12 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     height: 85px;
     width: 100%;
 
-    gap: 47rem;
+
     transition: 0.2s;
 }
 header::after {

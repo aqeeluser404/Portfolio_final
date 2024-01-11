@@ -22,12 +22,12 @@ body {
     margin-top: 450px;
 }
 .blank, .blank_2 {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     min-height: 100vh;
     background-image: linear-gradient(to right,
     rgba(50, 50, 50, 0),
-    rgba(50, 50, 50, 1) 50%,
+    rgb(30, 30, 30) 50%,
     rgba(50, 50, 50, 0));
 }
 /* ---overlay timeline--- */
@@ -116,8 +116,8 @@ body {
     
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     min-height: 82vh;
     width: 100%;
 }
@@ -177,8 +177,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    padding-bottom: 10rem;
 }
-.section-block-about-top {
+.section-block-top {
     display: flex;
     width: 100%;
 }
@@ -236,11 +237,12 @@ body {
 }
 
 .timeline-year {
-    font-size: 18px;
-    color: #d8d8d8;
+    font-size: 13px;
+    color: #d8d8d87a;
     width: 75px;
     margin-right: 5px;
-    text-align: center;
+    text-align: left;
+    font-weight: 500;
 }
 
 .timeline-content {
@@ -263,16 +265,80 @@ body {
     text-align: left;
 }
 
-
-/* education section=================================================== */
-/* #section-block-education {
+/* Skills section====================================================== */
+#section-block-skills {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    gap: 10rem;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+}
+.skill-row {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;} */
+}
+.skill-name{
+    font-size: 15px;
+    font-weight: 600;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 12px;
+    background: #282828;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 12px;
+    background: rgb(255, 146, 106);
+    border-radius: 3px;
+    position: relative;
+    font-weight: 500;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
 
 /* hire-me section=================================================== */
 
@@ -319,74 +385,6 @@ body {
     resize: vertical;
     min-height: 200px;
 }
-
-/* Skills section====================================================== */
-#section-block-skills {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: flex-start;
-    padding: 5rem;
-}
-.skills{
-    width: 100%;
-    max-width: 600px;
-}
-.skill-name{
-    font-size: 18px;
-    font-weight: 700;
-    color: #f1f1f1;
-    text-transform: uppercase;
-    margin: 20px 0;
-}
-.skill-bar{
-    height: 24px;
-    background: #282828;
-    border-radius: 3px;
-}
-.skill-per{
-    height: 24px;
-    background: rgb(255, 146, 106);
-    border-radius: 3px;
-    position: relative;
-    font-weight: 500;
-    animation: fillBars 2.5s 1;
-}
-
-.skill-per::before{
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background: #f1f1f1;
-    border-radius: 4px;
-    font-size: 12px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-}
-
-.skill-per::after{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #f1f1f1;
-    top: -15px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-}
-
-  @keyframes fillBars{
-    from{
-      width: 0;
-    }
-    to{
-      width: 100%;
-    }
-  }
 
 
 /* Projects section===================================================== */
