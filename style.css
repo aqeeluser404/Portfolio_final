@@ -249,7 +249,7 @@ body {
 .about-me-text {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    min-width: 60%;
 }
 /* .about-me-image {
     background-size: contain;
@@ -339,7 +339,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 1rem;
 }
 .skill-name{
     font-size: 15px;

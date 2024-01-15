@@ -5,6 +5,12 @@
     }
 }
 @media only screen and (max-width: 1155px) {
+    .h1 {
+        font-size: 3rem;
+    }
+    .h5 {
+        font-size: 1.5rem;
+    }
     #home {
         width: 100%;
         flex-direction: column-reverse;
@@ -90,9 +96,13 @@
     .card {
         /* width: 300px; */
     }
+    .timeline-content {
+        width: 100%;
+        height: auto;
+    }
     .text-area-1 {
         width: 100%;
-        text-align: left;
+        text-align: center;
         padding-left: 2%;
         padding-right: 2%;
     }
