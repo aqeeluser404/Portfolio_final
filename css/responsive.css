@@ -7,12 +7,10 @@
 @media only screen and (max-width: 1155px) {
     #home {
         width: 100%;
-        /* min-width: 100vh; */
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* margin: 25px; */
         gap: 2rem;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -33,7 +31,6 @@
     }
     .social-links {
         flex-direction: column;
-
     }
     .social-links a {
         font-size: 6rem;
@@ -43,34 +40,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
     .download-hire {
         width: 100%;
-        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     }
-    /* #home div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    } */
-    /* .img-profile {
-        display: none;
-    }
-    .img-profile-2 {
-        display: none;
-        max-width: 100%; 
-
-    } */
-    /* .direction-row {
-        display: flex;
-        flex-direction: row;
-    } */
-    
     .card_row {
         flex-direction: column;
     }
@@ -81,7 +56,27 @@
     #timelineIcon {
         display: none;
     }
+
+    #about {
+        flex-direction: column-reverse;
+    }
+    .icon-column {
+        justify-content: center;
+        align-items: center;
+    }
+    .education-timeline {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* gap: 1rem; */
+    }
+
+    .card {
+        width: 300px;
+    }
 }
+/* navigation=============================================== */
 /* @media only screen and (max-width: 1100px) {header {padding-left: 4rem;}} */
 @media only screen and (max-width: 900px) {
     header::after,

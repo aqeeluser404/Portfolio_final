@@ -248,7 +248,7 @@ body {
 .about-me-text {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    min-width: 100%;
 }
 /* .about-me-image {
     background-size: contain;
@@ -422,7 +422,7 @@ body {
 }
 
 .horizontal-line-2 {
-    width: 100px;
+    width: 3.16rem;
     flex: 1;
     border: none;
     border-top: 2px solid #ffffff;
