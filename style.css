@@ -116,9 +116,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
-    padding-top: 2%;
-    padding-bottom: 2%;
+    gap: 1.5rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 8%;
     padding-right: 8%;
     min-height: 82vh;
@@ -140,6 +140,14 @@ body {
     color: #9c9c9c;
     font-size: 2rem;
 }
+.download-hire {
+    display: flex;
+    gap: 2rem;
+}
+.download-hire a {
+    color: #9c9c9c;
+    font-size: 2rem;
+}
 #home .home-text-column {
     display: flex;
     flex-direction: column;
@@ -153,7 +161,7 @@ body {
     display: inline-block;
     text-decoration: none;
     color: #323232; 
-    background-color: #d8d8d8;;
+    background-color: #d8d8d8;
     text-align: center;
     height: 37px;
     padding: .6rem 0.7rem;
@@ -193,19 +201,59 @@ body {
     padding-left: 10%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 5rem;
+    justify-content: center;
+    gap: 15rem;
 }
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1.5rem;
+    width: 100px;
+}
+.polygon {
+    position: relative;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background-color: rgba(255, 217, 202, 0);
+    text-transform: uppercase;
+
+    color: #d8d8d8;
+    font-size: 8px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgb(255, 146, 106);
+}
+
+.polygon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 98%;
+    background: linear-gradient(45deg, rgba(255, 146, 106) 50%, transparent 50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
 .about-me-text {
     display: flex;
     flex-direction: column;
     max-width: 60%;
 }
-.about-me-image {
-
+/* .about-me-image {
     background-size: contain;
     background-position: center;
-}
+} */
 
 
 /* Styles for Education Timeline */
@@ -377,8 +425,8 @@ body {
     width: 100px;
     flex: 1;
     border: none;
-    border-top: 2px solid #ffffff; /* Adjust the color and style as needed */
-    margin: 0 0.5rem; /* Adjust the margin as needed */
+    border-top: 2px solid #ffffff;
+    margin: 0 0.5rem;
 }
 .horizontal-line {
     width: 75%;
