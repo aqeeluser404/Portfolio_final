@@ -10,19 +10,17 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        text-align: center;
         gap: 2rem;
         margin-top: 50px;
         margin-bottom: 50px;
-    }
-    .home-text-column {
-        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .img-profile {
         width: 100%
     }
     #home .home-text-column {
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
     .direction-row {
@@ -36,20 +34,26 @@
         font-size: 6rem;
         color: #ffffff;
     }
-    .section-block-top {
-        display: flex;
+    .download-hire {
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
-    .download-hire {
-        width: 100%;
+
+
+    .section-block-top {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
     .card_row {
         flex-direction: column;
     }
-
+    .page-header-text {
+        font-size: 3rem;
+        flex-direction: column;
+        line-height: .7;
+    }
     .timeline {
         display: none;
     }
@@ -59,6 +63,8 @@
 
     #about {
         flex-direction: column-reverse;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     .icon-column {
         justify-content: center;
@@ -69,11 +75,26 @@
         align-items: flex-start;
         flex-direction: column;
         flex-wrap: nowrap;
+        width: 90%;
         /* gap: 1rem; */
     }
-
+    .timeline-item {
+        width: 90%;
+        
+    }
+    .skill-row {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     .card {
-        width: 300px;
+        /* width: 300px; */
+    }
+    .text-area-1 {
+        width: 100%;
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }
 /* navigation=============================================== */
