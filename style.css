@@ -104,7 +104,7 @@ body {
 }
 
 .text-area-1 {
-    width: 69%;
+    width: 71%;
     text-align: center;
 }
 
@@ -117,8 +117,8 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 8%;
     padding-right: 8%;
     min-height: 82vh;
@@ -136,13 +136,16 @@ body {
     display: flex;
     gap: 2rem;
 }
-.social-links a {
+.social-links div a {
     color: #9c9c9c;
     font-size: 2rem;
 }
+.hidden-text {
+    display: none;
+}
 .download-hire {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .download-hire a {
     color: #9c9c9c;
@@ -436,16 +439,16 @@ body {
 }
 .project-name{
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     color: rgb(146, 146, 146);
     text-align: left;
     text-transform: uppercase;}
 
 .project-description {
-    font-size: 15px;
-
+    font-size: 13px;
+    text-transform: uppercase;
     color: #f1f1f1;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;}
 
 .card_row {
@@ -460,7 +463,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 320px;
-    background-color: #686868;
+    background-color: #e0e0e0b7;
     padding: .8rem;
     border-radius: .1rem;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
@@ -475,6 +478,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 5px;
 }
 
 .card .info img {
@@ -561,3 +565,25 @@ body {
     min-height: 200px;
 }
 
+
+
+#error-page {
+    color: #d8d8d8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    min-height: 82vh;
+    width: 100%;
+}
+
+#error-page a {
+    text-decoration: none;
+
+}

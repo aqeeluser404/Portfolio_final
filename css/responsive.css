@@ -35,10 +35,23 @@
     }
     .social-links {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .social-links a {
+    .social-links div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-links div a {
         font-size: 6rem;
         color: #ffffff;
+    }
+
+    .hidden-text {
+        display: block;
+
     }
     .download-hire {
         width: 100%;
