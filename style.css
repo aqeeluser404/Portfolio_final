@@ -147,7 +147,7 @@ div a {
 .download-hire {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .download-hire-buttons {
     display: flex;
