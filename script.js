@@ -1,5 +1,15 @@
 
+document.addEventListener("DOMContentLoaded", function() {
+  const header = document.querySelector("header");
 
+  window.addEventListener("scroll", function() {
+      if (window.scrollY > 50) {
+          header.classList.add("header-scroll");
+      } else {
+          header.classList.remove("header-scroll");
+      }
+  });
+});
 // Function for navigation hamburger
 const hamburger = document.querySelector(".hamburger");
 const contentWrapper = document.querySelector(".content-wrapper");
@@ -71,7 +81,9 @@ window.addEventListener('scroll', updateMirroredTimeline);
 
 function redirectToPage() {
   // Redirecting to another HTML page
-  window.location.href = 'hire.html';
+  window.location.href = 'https://formsubmit.co/el/jufidu';
+  // <a href="https://formsubmit.co/el/jufidu" target="_blank">Email us</a>
+
 }
 // function typeWriter() {
 //   const text = "Hi, I'm Aqeel, \nSoftware Developer";
