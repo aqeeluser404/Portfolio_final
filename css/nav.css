@@ -39,8 +39,8 @@ header::before {
     }
 }
 .header-scroll {
-    background: rgb(34, 34, 34); /* Change the background color when scrolling */
-    backdrop-filter: blur(5px); /* Add a blur effect to make the background semi-transparent */
+    background: rgb(34, 34, 34);
+    backdrop-filter: blur(5px)
 }
 /* Apply animation to header elements */
 header::after,
@@ -55,13 +55,16 @@ header::before {
 
 /* Initial state */
 header::after {
-    left: 100%; /* Initially outside the visible area */
+    left: 100%;
 }
 
 header::before {
-    left: 97%; /* Initially outside the visible area */
+    left: 97%;
 }
-
+.black-background {
+    background: rgb(34, 34, 34);
+    /* backdrop-filter: blur(5px); */
+}
 .title {
     display: flex;
     justify-content: center;
@@ -84,8 +87,7 @@ header::before {
     }
 
 .navbar.active {
-    /* javascript code */
-    height: 450px;}
+    height: 100vh;}
 
 .navbar ul {
     display: flex;
@@ -93,7 +95,6 @@ header::before {
     gap: 1rem;}
 
 .navbar.active ul {
-    /* javascript code */
     opacity: 1;}
 
 .navbar ul li {list-style-type: none;}

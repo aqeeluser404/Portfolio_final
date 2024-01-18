@@ -147,20 +147,16 @@
     .navbar {
        height: 0;
        overflow: hidden;
-       /* border-top: #d8d8d8 1px solid; */
        position: absolute;
-       border-radius: 25px;
+       /* border-radius: 25px; */
        top: 65px;
        left: 0;
        right: 0;
        width: 100vw;
 
-       background: rgb(34, 34, 34); /* Change the background color when scrolling */
-       backdrop-filter: blur(5px); /* Add a blur effect to make the background semi-transparent */
-   
-       /* background: #fefefe3a; */
-       /* border-radius: 2%; */
-       transition: 0.2s;       
+       background: rgb(34, 34, 34);
+
+       transition: 0.2s;
     }
     .navbar ul {
         opacity: 0;
