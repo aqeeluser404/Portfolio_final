@@ -137,6 +137,7 @@
     }
     .hamburger {
         display: block;
+        z-index: 2;
         cursor: pointer;
     }
     .hamburger .line {
@@ -150,7 +151,7 @@
        overflow: hidden;
        position: absolute;
        /* border-radius: 25px; */
-       top: 65px;
+       top: 0px;
        left: 0;
        right: 0;
        width: 100vw;
