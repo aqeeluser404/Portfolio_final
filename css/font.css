@@ -72,3 +72,27 @@
     margin: 0;
     display: inline-block;
 }
+.typewrite {
+    color: rgb(255, 146, 106);
+    text-decoration: none;
+    font-size: 1.5rem;
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 146, 106);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 146, 106); }
+  }
