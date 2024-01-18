@@ -87,6 +87,8 @@ header::before {
     }
 
 .navbar.active {
+    display: flex;
+
     height: 100vh;}
 
 .navbar ul {
