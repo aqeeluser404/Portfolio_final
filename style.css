@@ -304,6 +304,9 @@ div a {
 
 .timeline-content {
     border-left: 2px solid rgb(255, 146, 106);
+    /* border-bottom: 1px solid rgba(255, 146, 106, 0.514);
+    border-top: 2px solid rgb(255, 146, 106);
+    border-right: 1px solid rgba(255, 146, 106, 0.514); */
     padding-left: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;

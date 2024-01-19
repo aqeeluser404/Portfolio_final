@@ -33,9 +33,8 @@ hamburger.onclick = function() {
 // Function for redirecting to contact page
 function redirectToPage() {
   window.location.href = 'https://formsubmit.co/el/jufidu';
-  // <a href="https://formsubmit.co/el/jufidu" target="_blank">Email us</a>
 }
-
+  // <a href="https://formsubmit.co/el/jufidu" target="_blank">Email us</a>
 
 
 // Function for card skill containers
